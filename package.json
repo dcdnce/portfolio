@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcdnce/portfolio.git"
+  },
+  "author": "Paul Forestie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dcdnce/portfolio/issues"
+  },
+  "homepage": "https://github.com/dcdnce/portfolio#readme"
+}
