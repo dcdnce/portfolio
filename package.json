@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dcdnce/portfolio/issues"
   },
-  "homepage": "https://github.com/dcdnce/portfolio#readme"
+  "homepage": "https://github.com/dcdnce/portfolio#readme",
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  }
 }
