@@ -27,7 +27,7 @@ body {
 	height: 10px;
 	position: absolute;
 	border-radius: 50%;
-	border: 1px solid var(--blue-3);
+	background-color: var(--blue-3);
 	border-style: solid;
 }
 
@@ -52,7 +52,7 @@ body {
 	border: 1px solid var(--blue-2);
 }
 
-#span__dot {
+.blinking-dot {
 	animation: blink 1s infinite;
 }
 
@@ -60,4 +60,10 @@ body {
 	50% {
 		opacity: 0;
 	}
+}
+
+#div__body {
+	height: 100%;
+	padding: 0px 22px 22px 22px;
+	text-align: left;
 }
