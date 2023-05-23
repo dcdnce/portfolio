@@ -38,10 +38,9 @@ body {
 	border: 1px solid var(--blue-2);
 	background: var(--blue-1);
 
-	height: 50vh;
 }
 
-#div__header {
+#div__root-header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -62,7 +61,7 @@ body {
 	}
 }
 
-#div__body {
+#div__root-body {
 	height: 100%;
 	padding: 0px 22px 22px 22px;
 	text-align: left;
