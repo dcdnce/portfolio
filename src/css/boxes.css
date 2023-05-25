@@ -1,0 +1,33 @@
+.cool-box {
+	padding: 0.2em 0.5em 0.2em 0.5em;
+	margin: 0.2rem;
+	font-size: 0.7rem;
+	border-radius: 2em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.cool-box:hover {
+	transition: ease 0.5s;
+	transform: scale(1.1);
+}
+
+.graphic {
+	background-color: var(--fawn);
+}
+
+.c {
+	background-color: var(--purple);
+}
+
+.cpp {
+	background-color: var(--purple-light);
+}
+
+.school {
+	background-color: var(--lime);
+}
+
+.docker {
+	background: var(--blue-2);
+}
