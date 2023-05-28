@@ -2,8 +2,7 @@
 
 :root {
 	--blue-1: hsl(200, 100%, 95%);
-	/* --blue-2: hsl(198, 62%, 83%); */
-	--blue-2: #517EBC;
+	--blue-2: hsl(198, 62%, 83%);
 	--blue-3: #103545;
 	--purple: hsl(251, 65%, 80%);
 	--purple-light: hsl(251, 65%, 90%);
@@ -56,16 +55,6 @@ body {
 	height: 7em;
 	background: var(--blue-2);
 	border: 1px solid var(--blue-2);
-}
-
-#img__root-header {
-	position: relative;
-	background-image: url(../../img/flower.jpeg);
-	background-size: cover;
-	width: 16em;
-	height: 16em;
-	box-shadow: 1em 1em 8px 8px var(--blue-2);
-	z-index: 1;
 }
 
 .blinking-dot {
