@@ -57,8 +57,20 @@ body {
 	border: 1px solid var(--blue-2);
 }
 
+#div__root-header-login {
+	font-size: 3rem;	
+}
+
+#div__root-header-nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	background-color: red;
+}
+
 .blinking-dot {
-	animation: blink 1s infinite;
+	background-color: var(--blue-3);
+	animation: blink 1.1s infinite;
 }
 
 @keyframes blink {
@@ -72,4 +84,3 @@ body {
 	padding: 0px 22px 22px 22px;
 	text-align: left;
 }
-
