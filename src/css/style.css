@@ -12,18 +12,11 @@
 	font-family: "Roboto Mono", "Courier-New", "sans-serif";
 }
 
-* {
-	box-sizing: border-box;
-	list-style: none;
-	line-height: 1.15;
-}
-
 body {
 	text-align: center;
 	color: var(--blue-3);
 	background: white;
 	margin: 0;
-	height: 5000px;
 }
 
 #div__mousemove {
@@ -50,22 +43,20 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
-	padding: 22px;
-	height: 7em;
+	align-items: flex-end;
+	padding: 0 22px;
 	background: var(--blue-2);
 	border: 1px solid var(--blue-2);
 }
 
-#div__root-header-login {
-	font-size: 3rem;	
-}
-
-#div__root-header-nav ul {
+#div__root-header ul {
 	display: flex;
 	flex-direction: row;
-	justify-content: left;
-	background-color: red;
+	gap: 2rem;
+}
+
+#div__root-header ul li {
+	list-style-type: none;
 }
 
 .blinking-dot {

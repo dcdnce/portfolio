@@ -1,7 +1,4 @@
-- navbar
-- finir bio/liens
-- ::autre
-
+- fix liens bio
 - re arranger en mode ".terminal-nav ul" au lieu de rajouter des id partout
-
 - cookies avec reductions (icone) de liens deja visites
+- navbar

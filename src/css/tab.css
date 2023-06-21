@@ -1,21 +1,21 @@
-.li__projects {
+.tab {
 	margin: 0;
 	margin-top: 0.3em;
 	padding: 0;
 }
 
-.li__projects-title {
+.tab-title {
 	margin: 0;
 }
 
-.li__projects-brief {
+.tab-brief {
 	margin: 0;
 	margin-top: 0.2em;
 	padding-left: 1em;
 	font-size: 0.8rem;
 }
 
-.li__projects-boxes {
+.tab-boxes {
 	display: flex;
 	margin: 0;
 	font-size: 0.5rem;

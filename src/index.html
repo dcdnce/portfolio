@@ -5,7 +5,7 @@
 		<title>porfolio lol</title>
 		<!-- CSS -->
 		<link rel="stylesheet" href="./css/style.css">
-		<link rel="stylesheet" href="./css/li__projects.css">
+		<link rel="stylesheet" href="./css/tab.css">
 		<link rel="stylesheet" href="./css/boxes.css">
 		<link rel="stylesheet" href="./css/normalize.css">
 	</head>
@@ -14,22 +14,20 @@
 		<div id="div__root">
 			<div id="div__root-header">
 				<h1>pforesti <span class="blinking-dot">l</span></h1>
-				<div id ="div__root-header-nav">
-					<ul>
-						<li>lol</li>
-						<li>lol</li>
-						<li>lol</li>
-					</ul>
-				</div>
+				<ul>
+					<li>/home</li>
+					<li>/projets</li>
+					<li>/autre</li>
+				</ul>
 			</div>
 			<div id="div__root-body">
 				<div id="div__root-body-bio">
 					<!-- <div id="metrics"></div> -->
-					<p id="p__root-body-bio">Je m'appelle Paul Forestié, je suis un développeur passionné et touche-à-tout actuellement étudiant à 42 Nice. Au dela de ma maitrise du C et du C++, je prends plaisir a decouvrir et approfondir les
-						technos ainsi que m'investir dans de nouveaux projets. Ma pratique va
-						au-delà du simple code ; j'apprécie également l'architecture, la logique
-						et la propreté de mes réalisations. Mon appétit d'apprentissage est
-						insatiable, et je suis résolu à parcourir un long chemin vers l'excellence
+					<p id="p__root-body-bio">
+						Je m'appelle Paul Forestié, je suis un développeur passionné actuellement étudiant à 42 Nice. 
+						Je possède de solides compétences en C et C++, et je m'intéresse également à l'exploration et l'approfondissement d'autres technos. 
+						Je suis toujours ouvert à de nouveaux projets et j'aime m'investir pleinement dans mes réalisations, en veillant à ce qu'elles soient bien structurées et soignées. 
+						Mon désir d'apprentissage est insatiable, et je suis déterminé à progresser continuellement vers l'excellence 
 						<strong>:-)</strong>.</p>
 					<ul>
 						<li><a href="https://github.com/dcdnce">l/github</a></li>
@@ -38,73 +36,83 @@
 				</div>
 				<h2>::projets</h2>
 				<ul>
-					<li class="li__projects">
-						<p class="li__projects-title"><a href="https://github.com/dcdnce/minirt">/p/<strong>miniRT</strong></a></p>
-						<p class="li__projects-brief">"From scratch" implementation of a raytracer
+					<li class="tab">
+						<p class="tab-title"><a href="https://github.com/dcdnce/minirt">/p/<strong>miniRT</strong></a></p>
+						<p class="tab-brief">"From scratch" implementation of a raytracer
 							engine which handles simple geometric shapes, diffuse reflection,
 							shadows, and light.</p>
-						<div class="li__projects-boxes"><p class="cool-box c">C</p> <p
+						<div class="tab-boxes"><p class="cool-box c">C</p> <p
 								class="cool-box graphic">graphic</p> <p class="cool-box school">42
 								school</p></div>
 					</li>
-					<li><div class="li__projects">
-							<p class="li__projects-title">/p/<strong>webserv</strong></p>
-							<p class="li__projects-brief">A functional web server built in C++.
-								Sockets, kernel events, non-blocking I/O, RFC-Compliant HTTP request
-								parsing and response construction, configurable via .conf files.</p>
-							<div class="li__projects-boxes"><p class="cool-box cpp">C++</p> <p
-									class="cool-box school">42 school</p></div>
-						</div></li>
-					<li><div class="li__projects">
-							<p class="li__projects-title">/p/<strong>inception</strong></p>
-							<p class="li__projects-brief">Introductionary project to Docker, creating
-								a LEMP stack without any pre-prepared images.</p>
-							<div class="li__projects-boxes"><p class="cool-box docker">docker</p> <p
-									class="cool-box school">42 school</p></div>
-						</div></li>
-					<li><div class="li__projects">
-							<p class="li__projects-title">/p/<strong>inception</strong></p>
-							<p class="li__projects-brief">Introductionary project to Docker, creating
-								a LEMP stack without any pre-prepared images.</p>
-							<div class="li__projects-boxes"><p class="cool-box docker">docker</p> <p
-									class="cool-box school">42 school</p></div>
-						</div></li>
-					<li><div class="li__projects">
-							<p class="li__projects-title">/p/<strong>inception</strong></p>
-							<p class="li__projects-brief">Introductionary project to Docker, creating
-								a LEMP stack without any pre-prepared images.</p>
-							<div class="li__projects-boxes"><p class="cool-box docker">docker</p> <p
-									class="cool-box school">42 school</p></div>
-						</div></li>
-					<li><div class="li__projects">
-							<p class="li__projects-title">/p/<strong>inception</strong></p>
-							<p class="li__projects-brief">Introductionary project to Docker, creating
-								a LEMP stack without any pre-prepared images.</p>
-							<div class="li__projects-boxes"><p class="cool-box docker">docker</p> <p
-									class="cool-box school">42 school</p></div>
-						</div></li>
-					<li><div class="li__projects">
-							<p class="li__projects-title">/p/<strong>inception</strong></p>
-							<p class="li__projects-brief">Introductionary project to Docker, creating
-								a LEMP stack without any pre-prepared images.</p>
-							<div class="li__projects-boxes"><p class="cool-box docker">docker</p> <p
-									class="cool-box school">42 school</p></div>
-						</div></li>
+					<li class="tab">
+							<p class="tab-title">/p/<strong>webserv</strong></p>
+						<p class="tab-brief">A functional web server built in C++.
+							Sockets, kernel events, non-blocking I/O, RFC-Compliant HTTP request
+							parsing and response construction, configurable via .conf files.</p>
+						<div class="tab-boxes"><p class="cool-box cpp">C++</p> <p
+								class="cool-box school">42 school</p></div>
+					</li>
+					<li class="tab">
+						<p class="tab-title">/p/<strong>inception</strong></p>
+						<p class="tab-brief">Introductionary project to Docker, creating
+							a LEMP stack without any pre-prepared images.</p>
+						<div class="tab-boxes"><p class="cool-box docker">docker</p> <p
+								class="cool-box school">42 school</p></div>
+					</li>
+					<li class="tab">
+						<p class="tab-title">/p/<strong>inception</strong></p>
+						<p class="tab-brief">Introductionary project to Docker, creating
+							a LEMP stack without any pre-prepared images.</p>
+						<div class="tab-boxes"><p class="cool-box docker">docker</p> <p
+								class="cool-box school">42 school</p></div>
+					</li>
+					<li class="tab">
+						<p class="tab-title">/p/<strong>inception</strong></p>
+						<p class="tab-brief">Introductionary project to Docker, creating
+							a LEMP stack without any pre-prepared images.</p>
+						<div class="tab-boxes"><p class="cool-box docker">docker</p> <p
+								class="cool-box school">42 school</p></div>
+					</li>
+					<li class="tab">
+						<p class="tab-title">/p/<strong>inception</strong></p>
+						<p class="tab-brief">Introductionary project to Docker, creating
+							a LEMP stack without any pre-prepared images.</p>
+						<div class="tab-boxes"><p class="cool-box docker">docker</p> <p
+								class="cool-box school">42 school</p></div>
+					</li>
+					<li class="tab">
+						<p class="tab-title">/p/<strong>inception</strong></p>
+						<p class="tab-brief">Introductionary project to Docker, creating
+							a LEMP stack without any pre-prepared images.</p>
+						<div class="tab-boxes"><p class="cool-box docker">docker</p> <p
+								class="cool-box school">42 school</p></div>
+					</li>
 				</ul>
 				<h2>::autre</h2>
 				<ul>
-					<li><div id="li__projects">
-							<p class="li__projects-title">/a/leetcode</p>
-					</div></li>
-					<li><div id="li__projects">
-							<p class="li__projects-title">/a/codingame</p>
-					</div></li>
-					<li><div id="li__projects">
-							<p class="li__projects-title">/a/flickr</p>
-					</div></li>
+					<li class="tab">
+						<p class="tab-title">/a/codingame</p>
+						<p class="tab-brief">I took part in several seasonal challenges organized by Codingame, as a 42 Nice student.</p>
+						<p class="tab-brief"> - Spring Challenge 2022: top 20%.</p>
+						<p class="tab-brief"> - Fall Challenge 2022: top 17%.</p>
+					</li>
+					<li class="tab">
+						<p class="tab-title">/a/leetcode</p>
+						<p class="tab-brief">My Leetcode profile, I like to solve problems and take part in contests when I have the time.</p>
+					</li>
+										<li class="tab">
+						<p class="tab-title">/a/flickr</p>
+						<p class="tab-brief">I like taking pictures :)</p>
+					</li>
 				</ul>
 			</div>
 		</div>
+
+		
+		<footer>
+			<p>Copyright &copy; 2023 Paul Forestié</p>
+		</footer>
 
 		<!-- scripts -->
 		<script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
