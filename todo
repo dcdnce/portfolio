@@ -1,4 +1,4 @@
-- fix liens bio
-- re arranger en mode ".terminal-nav ul" au lieu de rajouter des id partout
-- cookies avec reductions (icone) de liens deja visites
+- fix margin
 - navbar
+- liens bio
+- cookies avec reductions (icone) de liens deja visites

@@ -16,7 +16,6 @@ body {
 	text-align: center;
 	color: var(--blue-3);
 	background: white;
-	margin: 0;
 }
 
 #div__mousemove {
@@ -33,17 +32,16 @@ body {
 #div__root {
 	display: flex;
 	flex-direction: column;
-	margin: 20px;
+	margin: auto;
+	width: 862px;
 	border: 1px solid var(--blue-2);
 	background: var(--blue-1);
-
 }
 
 #div__root-header {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: flex-start;
 	padding: 0 22px;
 	background: var(--blue-2);
 	border: 1px solid var(--blue-2);
@@ -75,3 +73,15 @@ body {
 	padding: 0px 22px 22px 22px;
 	text-align: left;
 }
+
+#p__bio {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/* @media (max-width: 882px) {
+	#div__root {
+		width: auto;
+		margin: 20px;
+	}
+} */
