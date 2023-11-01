@@ -51,11 +51,6 @@ header ul {
 	gap: 2rem;
 }
 
-header ul li {
-	list-style-type: none;
-	font-size: 1.2rem;
-}
-
 .blinking-dot {
 	background-color: var(--blue-3);
 	animation: blink 1.1s infinite;
