@@ -33,7 +33,8 @@ body {
 	flex-direction: column;
 	border: 1px solid var(--blue-2);
 	background: var(--blue-1);
-	margin: 20px;
+	max-width: 1240px;
+	margin: 20px auto;
 }
 
 header {
@@ -47,8 +48,15 @@ header {
 
 header ul {
 	display: flex;
-	flex-direction: row;
-	gap: 2rem;
+	flex-direction: column;
+	justify-content: flex-end;
+	gap: 1rem;
+}
+
+.icon {
+	min-width: 16px;
+	width: 5vw;
+	max-width: 32px;
 }
 
 .blinking-dot {
@@ -67,7 +75,7 @@ main {
 	text-align: left;
 }
 
-#p__bio {
+#bio {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
