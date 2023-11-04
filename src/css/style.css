@@ -49,6 +49,12 @@ header {
 	border: 1px solid var(--blue-2);
 }
 
+#name {
+	@media (max-width: 650px) {
+		font-size: 6vw;
+	}
+}
+
 header ul {
 	display: flex;
 	flex-direction: column;
