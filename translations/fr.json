@@ -1,0 +1,12 @@
+{
+	"bio": "Développeur passionné actuellement étudiant à 42 Nice. Je possède de solides compétences en C et C++, et je m'intéresse également à de nombreuses autres technos. J'essaie continuellement de progresser et de decouvrir de nouvelles choses.", 
+	"tab-minirt": "Implémentation \"from scratch\" d'un moteur de raytracing, formes géométriques simples, réflexion diffuse, modèle de Phong complet.",
+	"tab-webserv": "Un serveur web fonctionnel construit en C++. Sockets, événements kernel, E/S non bloquantes, analyse des requêtes HTTP et construction des réponses conformes aux RFC, fichiers .conf.",
+	"tab-inception": "Projet d'introduction à Docker, créant une pile LEMP sans images préparées à l'avance.",
+	"tab-noiseterrain": "Un générateur de terrain réalisé avec Raylib et la bibliothèque FastNoiseLite.",
+	"tab-noisemlx": "Générateur de noise créé à partir de rien, dans le but de comprendre son fonctionnement.",
+	"tab-pfm": "pforesti's math, ma propre bibliothèque de mathématiques conçue pour m'aider dans certains projets.",
+	"tab-codingame": "J'ai participé à plusieurs défis saisonniers organisés par Codingame, en tant qu'étudiant de 42 Nice.",
+	"tab-leetcode": "Mon profil Leetcode, j'aime résoudre des problèmes et participer à des contest quand j'en ai le temps...",
+	"tab-flickr": "J'aime prendre des photos :)"
+}
