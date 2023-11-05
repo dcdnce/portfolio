@@ -13,6 +13,23 @@
 	color:var(--blue-3);
 }
 
+.flags {
+	width: 100vw;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 20px;
+}
+
+.flags img {
+	width: 22.5px;
+	height: 10px;
+	margin: 1px;
+	border: 1px solid black;
+}
+
 body {
 	background: white;
 }

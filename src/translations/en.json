@@ -1,3 +1,12 @@
 {
-	"bio": "Passionate developer currently studying at 42 Nice. I have solid skills in C and C++, and I'm also interested in many other technologies. I'm always trying to improve and discover new things."
+	"bio": "Passionate developer currently studying at 42 Nice. I have solid skills in C and C++, and I'm also interested in many other technologies. I'm always trying to improve and discover new things.",
+	"tab-minirt": "\"From scratch\" implementation of a raytracing engine which handles simple geometric shapes, diffuse reflection, with complete Phong model.",
+	"tab-webserv": "A functional web server built in C++. Sockets, kernel events, non-blocking I/O, RFC-Compliant HTTP request parsing and response construction, configurable via .conf files.",
+	"tab-inception": "Introductionary project to Docker, creating a LEMP stack without any pre-prepared images.",
+	"tab-noiseterrain": "A naive landmass generator made with Raylib and the FastNoiseLite library.",
+	"tab-noisemlx": "Noise generator, created from scratch, with the aim of understanding how it works.",
+	"tab-pfm": "pforesti's math, my own mathematics library created to help me for some projects.",
+	"tab-codingame": "I took part in several seasonal challenges organized by Codingame, as a 42 Nice student.",
+	"tab-leetcode": "My Leetcode profile, I like to solve problems and take part in contests when I have the time.",
+	"tab-flickr": "I like taking pictures :)"
 }

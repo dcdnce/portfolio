@@ -1,11 +1,10 @@
-// Fonction pour charger les traductions
 async function loadTranslations(language: string): Promise<{ [key: string]: string }> {
-  let translationFile: string = "./translations/en.json";
+  let translationFile: string = "../src/translations/en.json";
 
   if (language === "en") {
-    translationFile = "./translations/en.json";
+    translationFile = "../src/translations/en.json";
   } else if (language === "fr") {
-    translationFile = "./translations/fr.json";
+    translationFile = "../src/translations/fr.json";
   }
 
   const response = await fetch(translationFile);
@@ -17,21 +16,31 @@ async function loadTranslations(language: string): Promise<{ [key: string]: stri
   }
 }
 
-let currentLanguage = "en"; // Par défaut, la langue est l'anglais
-let translations: { [key: string]: string } = {};
-
-// Chargez les traductions au démarrage de la page
-loadTranslations(currentLanguage)
-  .then((loadedTranslations) => {
-    translations = loadedTranslations;
-  })
-  .catch((error) => {
-    console.error("Failed to load translations:", error);
-  });
-
-// Actualiser les traductions
-for (const key in translations) {
-	const elem: Element | null  = document.querySelector('[translation="' + key + '"]');
-	if (elem != null)
-		elem.textContent = translations[key];
+async function loadAndApplyTranslation(lang: string) {
+  let currTranslation: { [key: string]: string } = {};
+  // Load
+  loadTranslations(lang)
+    .then((loadedTranslation) => {
+      currTranslation = loadedTranslation;
+      // Apply
+      for (const key in currTranslation) {
+        const elem: Element | null  = document.querySelector('[translation="' + key + '"]');
+        if (elem != null)
+          elem.textContent = currTranslation[key];
+      }
+    })
+    .catch((error) => {
+      console.error("Failed to load translations:", error);
+    });
 }
+
+document.querySelector('[alt="fr"]')?.addEventListener('click', () => {
+  loadAndApplyTranslation("fr");
+});
+
+document.querySelector('[alt="en"]')?.addEventListener('click', () => {
+  loadAndApplyTranslation("en");
+});
+
+// Init
+loadAndApplyTranslation("fr");
