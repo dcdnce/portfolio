@@ -1,4 +1,19 @@
 "use strict";
+function setCookie(name, value, days) {
+    const expires = new Date();
+    expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
+    document.cookie = name + '=' + value + ';expires=' + expires.toUTCString();
+}
+function getCookie(name) {
+    const cookies = document.cookie.split('; ');
+    for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i].split('=');
+        if (cookie[0] === name) {
+            return cookie[1];
+        }
+    }
+    return null;
+}
 async function loadTranslations(language) {
     let translationFile = "../src/translations/en.json";
     if (language === "en") {
@@ -27,6 +42,7 @@ async function loadAndApplyTranslation(lang) {
             const elem = document.querySelector('[translation="' + key + '"]');
             if (elem != null)
                 elem.textContent = currTranslation[key];
+            setCookie('lang', lang, 365);
         }
     })
         .catch((error) => {
@@ -40,4 +56,9 @@ document.querySelector('[alt="en"]')?.addEventListener('click', () => {
     loadAndApplyTranslation("en");
 });
 // Init
-loadAndApplyTranslation("fr");
+let lang = "fr";
+const savedLang = getCookie('lang');
+if (savedLang) {
+    lang = savedLang;
+}
+loadAndApplyTranslation(lang);

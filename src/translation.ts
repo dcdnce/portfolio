@@ -1,3 +1,20 @@
+function setCookie(name: string, value: string, days: number) {
+  const expires = new Date();
+  expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
+  document.cookie = name + '=' + value + ';expires=' + expires.toUTCString();
+}
+
+function getCookie(name: string) {
+  const cookies = document.cookie.split('; ');
+  for (let i = 0; i < cookies.length; i++) {
+    const cookie = cookies[i].split('=');
+    if (cookie[0] === name) {
+      return cookie[1];
+    }
+  }
+  return null;
+}
+
 async function loadTranslations(language: string): Promise<{ [key: string]: string }> {
   let translationFile: string = "../src/translations/en.json";
 
@@ -14,6 +31,7 @@ async function loadTranslations(language: string): Promise<{ [key: string]: stri
     console.error("Failed to load translations.");
     return {};
   }
+
 }
 
 async function loadAndApplyTranslation(lang: string) {
@@ -27,6 +45,7 @@ async function loadAndApplyTranslation(lang: string) {
         const elem: Element | null  = document.querySelector('[translation="' + key + '"]');
         if (elem != null)
           elem.textContent = currTranslation[key];
+        setCookie('lang', lang, 365);
       }
     })
     .catch((error) => {
@@ -43,4 +62,9 @@ document.querySelector('[alt="en"]')?.addEventListener('click', () => {
 });
 
 // Init
-loadAndApplyTranslation("fr");
+let lang = "fr";
+const savedLang = getCookie('lang');
+if (savedLang) {
+  lang = savedLang;
+}
+loadAndApplyTranslation(lang);
