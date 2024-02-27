@@ -116,8 +116,20 @@ main {
 }
 
 #bio {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+#bio-boxes {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
 }
 
 footer {

@@ -24,7 +24,13 @@
 				</ul>
 			</header>
 			<main>
-				<p id="bio" translation="bio"></p>
+				<div id="bio">
+					<p translation="bio" style="max-width:50%"></p>
+					<div id="bio-boxes">
+						<p class="cool-box bio-box c" importance="3">C</p>
+						<p class="cool-box bio-box cpp" importance="1">C++</p>
+						<p class="cool-box bio-box graphic" importance="2">graphic</p></div>
+				</div>
 				<h2>::projets</h2>
 				<ul>
 					<li class="tab">
@@ -79,10 +85,11 @@
 			</main>
 	</div>
 	<footer>
-		<p>Copyright &copy; 2023 Paul Forestié</p>
+		<p>Copyright &copy; 2024 Paul Forestié</p>
 	</footer>
 	</body>
 		<!-- scripts -->
 	<script src="../dist/index.js"></script>
 	<script src="../dist/translation.js"></script>
+	<script src="../dist/cool-box.js"></script>
 </html>

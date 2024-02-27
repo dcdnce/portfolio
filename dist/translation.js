@@ -42,8 +42,8 @@ async function loadAndApplyTranslation(lang) {
             const elem = document.querySelector('[translation="' + key + '"]');
             if (elem != null)
                 elem.textContent = currTranslation[key];
-            setCookie('lang', lang, 365);
         }
+        setCookie('lang', lang, 365);
     })
         .catch((error) => {
         console.error("Failed to load translations:", error);
