@@ -1,5 +1,5 @@
 {
-	"bio": "Passionate developer currently studying at 42 Nice. I have solid skills in C and C++, and I'm also interested in many other technologies. I'm always trying to improve and discover new things.",
+	"bio": "Passionate about development and currently a student at 42 Nice, I have solid expertise in C and C++, as well as strong skills in JavaScript/TypeScript and Python. I am also curious and open to many other technologies. I am constantly looking for new knowledge and stimulating challenges.",
 	"tab-minirt": "\"From scratch\" implementation of a raytracing engine which handles simple geometric shapes, diffuse reflection, with complete Phong model.",
 	"tab-webserv": "A functional web server built in C++. Sockets, kernel events, non-blocking I/O, RFC-Compliant HTTP request parsing and response construction, configurable via .conf files.",
 	"tab-inception": "Introductionary project to Docker, creating a LEMP stack without any pre-prepared images.",

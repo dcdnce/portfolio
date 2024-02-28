@@ -1,5 +1,5 @@
 {
-	"bio": "Développeur passionné actuellement étudiant à 42 Nice. Je possède de solides compétences en C et C++, et je m'intéresse également à de nombreuses autres technos. J'essaie continuellement de progresser et de decouvrir de nouvelles choses.", 
+	"bio": "Passionné par le développement et actuellement étudiant à 42 Nice, je possède une solide expertise en C et C++, ainsi que des compétences affirmées en JavaScript/TypeScript et Python. Je suis également curieux et ouvert à de nombreuses autres technos. Je suis constamment en quête de nouvelles connaissances et de défis stimulants.",
 	"tab-minirt": "Implémentation \"from scratch\" d'un moteur de raytracing, formes géométriques simples, réflexion diffuse, modèle de Phong complet.",
 	"tab-webserv": "Un serveur web fonctionnel construit en C++. Sockets, événements kernel, E/S non bloquantes, analyse des requêtes HTTP et construction des réponses conformes aux RFC, fichiers .conf.",
 	"tab-inception": "Projet d'introduction à Docker, créant une pile LEMP sans images préparées à l'avance.",
