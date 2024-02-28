@@ -8,6 +8,7 @@
 	--purple-light: hsl(251, 65%, 90%);
 	--fawn: #FFB86F;
 	--lime: hsl(64, 100%, 64%);
+	--red-p:  #FF5733;
 	font-size: 16px;
 	font-family: "Roboto Mono", "Courier-New", "sans-serif";
 	color:var(--blue-3);
@@ -70,6 +71,7 @@ header {
 	@media (max-width: 650px) {
 		font-size: 6vw;
 	}
+	user-select: none;
 }
 
 header ul {
@@ -117,7 +119,7 @@ main {
 
 #bio {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-start;
 	padding-top: 10px;
@@ -127,9 +129,10 @@ main {
 #bio-boxes {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 	align-items: flex-start;
 	flex-wrap: wrap;
+	margin: auto;
 }
 
 footer {

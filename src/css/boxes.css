@@ -4,12 +4,19 @@
 	font-size: 0.7rem;
 	border-radius: 2rem;
 	text-align: center;
+	user-select: none;
 }
 
 .cool-box:hover {
 	transition: ease 0.5s;
 	transform: scale(1.1);
 }
+
+ .bio-box {
+	padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+	font-size: 1.0rem;
+	border-radius: 2.3rem;
+ }
 
 .graphic {
 	background-color: var(--fawn);
@@ -24,13 +31,23 @@
 }
 
 .school {
-	background-color: var(--lime);
+	background-color: var(--blue-3);
+	color: var(--blue-1);
 }
 
 .docker {
-	background: var(--blue-2);
+	color: var(--blue-3);
+	background-color: var(--blue-2);
 }
 
 .math {
 	background-color: #9afe2e;
+}
+
+.python {
+	background-color: var(--lime);
+}
+
+.js {
+	background: var(--red-p)
 }
